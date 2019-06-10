@@ -1,0 +1,9 @@
+{
+    "name": "brush_sprite",
+    "components": {
+        "SpriteComponent": { },
+        "AABBMask": {
+            "component": "SpriteComponent#1"
+        }
+    }
+}

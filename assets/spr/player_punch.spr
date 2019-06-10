@@ -1,0 +1,6 @@
+{
+    "parent": "spr/player_stand.spr",
+    "speed": 16,
+    "startindex": 4,
+    "length": 6
+}

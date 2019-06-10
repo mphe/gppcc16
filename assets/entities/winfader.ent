@@ -1,0 +1,9 @@
+{
+    "name": "winfader",
+    "base": "entities/fader.ent",
+    "components": {
+        "Fader": {
+            "color": [ 255, 255, 255 ]
+        }
+    }
+}

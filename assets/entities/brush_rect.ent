@@ -1,0 +1,17 @@
+{
+    "name": "brush_rect",
+    "components": {
+        "PolygonCollision": {
+            "FillType": 2,
+            "flags": 4,
+            "Normals": 1
+        },
+        "MeshRenderer": {
+            "mapping": 0
+        },
+        "PolygonBrushComponent": {
+            "polygon": "PolygonCollision#1",
+            "shape": "MeshRenderer#1"
+        }
+    }
+}

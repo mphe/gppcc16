@@ -1,0 +1,3 @@
+[submodule "extlib/GameLib"]
+	path = extlib/GameLib
+	url = https://github.com/mphe/GameLib.git

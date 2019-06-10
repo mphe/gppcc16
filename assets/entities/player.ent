@@ -1,0 +1,16 @@
+{
+    "name": "player",
+    "base": "entities/boxer.ent",
+    "components" : {
+        "SpriteComponent#1" : {
+            "depth" : -1
+        },
+        "BoxerController": {
+            "handleInput": true
+        },
+        "Target": {
+            "target": "enemy"
+        },
+        "Logic": {}
+    }
+}

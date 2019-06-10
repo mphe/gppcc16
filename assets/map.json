@@ -1,0 +1,227 @@
+{
+   "cameras" : [
+      {
+         "active" : true,
+         "name" : "cam",
+         "pos" : [ 480, 220 ],
+         "ratio" : 1,
+         "size" : [ 320, 179.99998474121094 ],
+         "velocity" : [ 0, 0 ],
+         "viewport" : {
+            "pos" : [ 0, 0 ],
+            "size" : [ 1, 1 ]
+         },
+         "zoom" : 1
+      }
+   ],
+   "entmgr" : [
+      {
+         "components" : {
+            "SpriteComponent#1" : {
+               "depth" : -5
+            }
+         },
+         "name" : "player",
+         "transform" : {
+            "pos" : [ 577.43524169921875, 381.84375 ]
+         }
+      },
+      {
+         "components" : {
+            "MeshRenderer#1" : {
+               "options" : {
+                  "flags" : 4,
+                  "texture" : "tex/block.png"
+               },
+               "primitiveType" : 5,
+               "texture" : "tex/block.png",
+               "vertices" : [
+                  [ 0, 0 ],
+                  [ 320, 0 ],
+                  [ 320, 32 ],
+                  [ 0, 32 ]
+               ]
+            },
+            "PolygonCollision#1" : {
+               "flags" : 5,
+               "vertices" : [
+                  [ 0, 0 ],
+                  [ 320, 0 ],
+                  [ 320, 32 ],
+                  [ 0, 32 ]
+               ]
+            }
+         },
+         "name" : "brush_rect",
+         "transform" : {
+            "pos" : [ 480, 384 ]
+         }
+      },
+      {
+         "components" : {
+            "SpriteComponent#1" : {
+               "transform" : {
+                  "scale" : [ -1, 1 ]
+               }
+            }
+         },
+         "name" : "enemy",
+         "transform" : {
+            "pos" : [ 720, 381.84375 ]
+         }
+      },
+      {
+         "components" : {
+            "CameraTracker#1" : {
+               "centertrack" : false,
+               "shakeduration" : 0.15000000596046448,
+               "shakeradius" : 2.5,
+               "size" : [ 320, 240 ]
+            },
+            "SpriteComponent#1" : {
+               "depth" : -12,
+               "options" : {
+                  "flags" : 4,
+                  "texture" : "tex/unknown.png"
+               },
+               "transform" : {
+                  "origin" : [ 16, 16 ]
+               }
+            }
+         },
+         "name" : "camera",
+         "transform" : {
+            "pos" : [ 480, 220 ],
+            "scale" : [ 1, 0.74999994039535522 ]
+         }
+      },
+      {
+         "components" : {
+            "MeshRenderer#1" : {
+               "options" : {
+                  "flags" : 4,
+                  "texture" : "tex/block.png"
+               },
+               "primitiveType" : 5,
+               "texture" : "tex/block.png",
+               "vertices" : [
+                  [ 0, 0 ],
+                  [ 32, 0 ],
+                  [ 32, 64 ],
+                  [ 0, 64 ]
+               ]
+            },
+            "PolygonCollision#1" : {
+               "flags" : 5,
+               "vertices" : [
+                  [ 0, 0 ],
+                  [ 32, 0 ],
+                  [ 32, 64 ],
+                  [ 0, 64 ]
+               ]
+            }
+         },
+         "name" : "brush_rect",
+         "transform" : {
+            "pos" : [ 464, 320 ]
+         }
+      },
+      {
+         "components" : {
+            "MeshRenderer#1" : {
+               "options" : {
+                  "flags" : 4,
+                  "texture" : "tex/block.png"
+               },
+               "primitiveType" : 5,
+               "texture" : "tex/block.png",
+               "vertices" : [
+                  [ 0, 0 ],
+                  [ 32, 0 ],
+                  [ 32, 64 ],
+                  [ 0, 64 ]
+               ]
+            },
+            "PolygonCollision#1" : {
+               "flags" : 5,
+               "vertices" : [
+                  [ 0, 0 ],
+                  [ 32, 0 ],
+                  [ 32, 64 ],
+                  [ 0, 64 ]
+               ]
+            }
+         },
+         "name" : "brush_rect",
+         "transform" : {
+            "pos" : [ 784, 320 ]
+         }
+      },
+      {
+         "components" : {
+            "SpriteComponent#1" : {
+               "depth" : 5,
+               "options" : {
+                  "texture" : "tex/boxring.png"
+               },
+               "sprite" : "spr/boxring.spr"
+            }
+         },
+         "name" : "brush_sprite",
+         "transform" : {
+            "pos" : [ 472, 152 ],
+            "scale" : [ 1.0499999523162842, 1.0499999523162842 ]
+         }
+      },
+      {
+         "components" : {
+            "SpriteComponent#1" : {
+               "layer" : "win",
+               "options" : {
+                  "texture" : "tex/gameend.png"
+               },
+               "sprite" : "spr/win.spr"
+            }
+         },
+         "name" : "brush_sprite",
+         "transform" : {
+            "origin" : [ 114, 22 ],
+            "pos" : [ 640, 272 ]
+         }
+      },
+      {
+         "components" : {
+            "SpriteComponent#1" : {
+               "layer" : "gameover",
+               "options" : {
+                  "texture" : "tex/gameend.png"
+               },
+               "sprite" : "spr/gameover.spr"
+            }
+         },
+         "name" : "brush_sprite",
+         "transform" : {
+            "origin" : [ 114, 22 ],
+            "pos" : [ 640, 272 ]
+         }
+      }
+   ],
+   "rendersystem" : {
+      "layers" : {
+         "gameover" : {
+            "depth" : -3,
+            "flags" : 4,
+            "name" : "gameover",
+            "parallax" : 1,
+            "texture" : ""
+         },
+         "win" : {
+            "depth" : -3,
+            "flags" : 4,
+            "name" : "win",
+            "parallax" : 1,
+            "texture" : ""
+         }
+      }
+   }
+}

@@ -1,0 +1,7 @@
+{
+    "texture": "tex/boxer_die.png",
+    "framesize": [ 101, 77 ],
+    "origin": [ 74, 70 ],
+    "length": 11,
+    "speed": 8
+}

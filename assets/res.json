@@ -1,0 +1,20 @@
+{
+    "searchpath": "assets",
+    "forcereload": false,
+    "once": {
+        "entities": [
+            "brush_line.ent",
+            "brush_polygon.ent",
+            "brush_sprite.ent",
+            "brush_rect.ent",
+            "player.ent",
+            "enemy.ent",
+            "camera.ent",
+            "fader.ent",
+            "winfader.ent",
+            "globalconfig.ent"
+        ]
+    },
+    "preload": {
+    }
+}

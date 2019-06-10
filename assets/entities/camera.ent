@@ -1,0 +1,9 @@
+{
+    "name": "camera",
+    "components": {
+        "CameraTracker": {},
+        "SpriteComponent": {
+            "sprite": "spr/unknown.spr"
+        }
+    }
+}

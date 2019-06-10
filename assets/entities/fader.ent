@@ -1,0 +1,9 @@
+{
+    "name": "fader",
+    "components": {
+        "Fader": {
+            "depth": -2,
+            "fadetime": 1
+        }
+    }
+}

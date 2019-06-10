@@ -1,0 +1,7 @@
+{
+    "texture": "tex/gameend.png",
+    "framesize": [ 228, 44 ],
+    "startindex": 1,
+    "length": 1,
+    "speed": 0
+}

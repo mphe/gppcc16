@@ -1,0 +1,55 @@
+{
+    "name": "boxer",
+    "components" : {
+        "AABBCollision#1" : {
+            "flags" : 40,
+            "size" : [ 22, 72 ],
+            "transform" : {
+                "origin" : [ 12, 70 ]
+            }
+        },
+        "SpriteComponent#1" : {
+            "options" : {
+                "texture" : "tex/boxer.png"
+            },
+            "sprite": "spr/player_stand.spr",
+            "transform" : {
+                "origin" : [ 23, 70 ]
+            }
+        },
+        "QPhysicsComponent": { },
+        "QController#1" : {
+            "jumpspeed" : 0,
+            "handleInput": false
+        },
+        "Health": {},
+        "BoxerController": {
+            "Stand": "spr/player_stand.spr",
+            "Walk": "spr/player_sidestep.spr",
+            "Punch": "spr/player_punch.spr",
+            "Duck": "spr/player_duck.spr",
+            "Block": "spr/player_block.spr",
+            "Stagger": "spr/player_stagger.spr",
+            "KO": "spr/player_die.spr",
+            "Win": "spr/player_win.spr",
+            "punchsound": "sound/punch.wav",
+            "blocksound": "sound/block.wav",
+            "kosound": "sound/ko.wav",
+            "blockRegenMultiplier": 0.3,
+            "blockDamageFactor": 0,
+            "hitBlockedEndurancePenalty": 0,
+            "blockEndurancePenalty": 20,
+            "punchEndurance": 15,
+            "knockback": 170
+        },
+        "Target": {
+            "component": "SpriteComponent#1",
+            "transitionSpeed": 0
+        },
+        "Endurance": {
+            "regenSpeed": 45,
+            "emptyPenalty": 2,
+            "cooldown": 1.0
+        }
+    }
+}
