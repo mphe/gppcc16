@@ -152,7 +152,7 @@ namespace gppcc16
 
             if (inreach)
             {
-                if (_context.playercontroller->getState() == Punch && random() % 100 <= 33)
+                if (_context.playercontroller->getState() == Punch && rand() % 100 <= 33)
                 {
                     if (_context.endurance->getFactor() < 0.2)
                         _policy.reset(new WalkPolicy(_context, true));
@@ -165,7 +165,7 @@ namespace gppcc16
                         _policy.reset(new WalkPolicy(_context, true));
                     else
                     {
-                        switch (random() % 6)
+                        switch (rand() % 6)
                         {
                             case 0:
                                 _policy.reset(new WalkPolicy(_context, false));
@@ -189,10 +189,10 @@ namespace gppcc16
 
             if (!inreach)
             {
-                if (_context.endurance->getFactor() > 0.5 && random() % 3 == 0)
+                if (_context.endurance->getFactor() > 0.5 && rand() % 3 == 0)
                     _policy.reset(new WalkPolicy(_context, false));
                 else
-                    switch (random() % 3)
+                    switch (rand() % 3)
                     {
                         case 0:
                             _policy.reset(new WalkPolicy(_context, false));

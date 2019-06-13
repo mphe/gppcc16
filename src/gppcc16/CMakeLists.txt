@@ -15,7 +15,10 @@ set(PROJECT_SOURCES
 )
 
 set(EXT_LIBRARIES
-    ${SFML_LIBRARIES}
+    sfml-audio
+    sfml-graphics
+    sfml-window
+    sfml-system
     gamelib
 )
 

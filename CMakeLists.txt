@@ -7,8 +7,6 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 
-set(SFML_ROOT "" CACHE PATH "SFML library directory (optional)")
-
 option(GPPCC16_BUILD_TESTS "Build tests" ON)
 option(USE_CCACHE "Use ccache if available" ON)
 
@@ -45,8 +43,7 @@ endif(USE_CCACHE)
 # }}} Options
 
 # sfml
-find_package(SFML 2.4 COMPONENTS system window graphics REQUIRED)
-include_directories(${SFML_INCLUDE_DIR})
+find_package(SFML 2.5 COMPONENTS system window graphics audio REQUIRED)
 
 add_subdirectory("extlib")
 add_subdirectory("src/gppcc16")
