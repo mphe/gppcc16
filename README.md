@@ -52,4 +52,4 @@ Use the [binary][windownload], except you are a masochist.
 6. Enjoy
 
 
-[windownload]: https://github.com/mphe/gppcc16/releases/download/1.0/gppcc16.zip
+[windownload]: https://github.com/mphe/gppcc16/releases/latest
