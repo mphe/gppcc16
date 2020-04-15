@@ -9,6 +9,9 @@ Linux download: [compile it](#building)
 * Punch: `E`
 * Quit: `Escape`
 
+## Screenshot
+![Screenshot](screenshot.png)
+
 ## Building
 ### Prerequisites
 * SFML 2.5
